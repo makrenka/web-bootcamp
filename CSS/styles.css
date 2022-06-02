@@ -18,3 +18,13 @@ body {
 li {
     list-style-type: none;
 }
+
+hr {
+    width: 200px;
+    left: 0px;
+    top: 218px;
+    border: none;
+    background-color: grey; /* Цвет линии */
+    color: grey; /* Цвет линии для IE6-7 */
+    height: 2px; /* Толщина линии */
+}
