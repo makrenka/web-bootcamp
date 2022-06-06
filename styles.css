@@ -1,3 +1,9 @@
+@font-face {
+    font-family: 'Roboto';
+    font-weight: 700;
+    src: url('./fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+}
+
 body {
     margin: 0;
 }
@@ -22,9 +28,13 @@ li {
 hr {
     width: 200px;
     left: 0px;
-    top: 218px;
     border: none;
     background-color: grey; /* Цвет линии */
     color: grey; /* Цвет линии для IE6-7 */
-    height: 2px; /* Толщина линии */
+    height: 1px; /* Толщина линии */
+}
+
+.subscriptions-tytle {
+    color: #AAAAAA;
+    font-weight: 700;
 }
