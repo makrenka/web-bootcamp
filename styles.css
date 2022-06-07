@@ -4,8 +4,27 @@
     src: url('./fonts/Roboto/Roboto-Regular.ttf') format('truetype');
 }
 
+:root {
+    --color-black-12: #121212;
+    --color-black-18: #181818;
+    --color-black-21: #212121;
+    --color-black-32: #323232;
+    --color-black-38: #383838;
+    --color-black-47: #474747;
+    --color-white: #FFFFFF;
+    --color-gray-AA: #AAAAAA;
+    --color-blue: #3DA6FF;
+}
+
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+    font-weight: 400;
 }
 
 .layout {
@@ -13,12 +32,11 @@ body {
 }
 
 .sidebar {
-    position: absolute;
     width: 220px;
     height: 100vh;
-    left: 0px;
-    top: 0px;
-    background: #212121;
+    background: var(--color-black-21);
+    padding: 16px 20px 16px 0;
+    overflow-y: auto;
 }
 
 li {
@@ -37,4 +55,34 @@ hr {
 .subscriptions-tytle {
     color: #AAAAAA;
     font-weight: 700;
+}
+
+.hambarger {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.menu-items {
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--color-black-38);
+    display: block;
+    
+}
+
+.items {
+    padding: 5px 0 5px 24px;
+}
+
+.icon {
+    margin-right: 20px;
+}
+
+.guide-item {
+    vertical-align: middle;
+    font-weight: 400;
+    text-decoration: none;
+    color: var(--color-white);
 }

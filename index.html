@@ -14,23 +14,29 @@
     <meta name="theme-color" content="#ffffff">
     <title>Document</title>
     <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
     <div class="layout">
         <aside class="sidebar">
-            <button>
-                <img src="./Images/icons/hambarger.svg" alt="hambarger">
-            </button>
-            <a href="/" class="logo">
-                <img src="./Images/icons/logo.svg" alt="logo">
-            </a>
+            <div class="logo-wrapper">
+                <button class="hambarger">
+                    <img src="./Images/icons/hambarger.svg" alt="hambarger" >
+                </button>
+                <a href="/" class="logo">
+                    <img src="./Images/icons/logo.svg" alt="logo">
+                </a>
+            </div>
+            
             <nav>
                 <div id="guide-content" class="guide-content">
                     <!-- SVG is a vector format, files can be enlarged to any size without loss of quality, 
                         are smaller than any raster counterpart. The format is ideal for icons, logos. -->
-                    <div id="top-guide-section">
+                    <div id="top-guide-section" class="menu-items">
                         <div id="home-item" class="items">
                             <a href="/" class="guide-item">
                                 <img src="./Images/icons/Home.svg" alt="Home" class="icon">
@@ -57,7 +63,7 @@
                         </div>
                     </div>
                     <hr align="left">
-                    <div id="lower-guide-section">
+                    <div id="lower-guide-section" class="menu-items">
                         <div id="library-item" class="items">
                             <a href="/library" class="guide-item">
                                 <img src="./Images/icons/Library.svg" alt="Library" class="icon">
@@ -144,10 +150,10 @@
                             </a>
                         </div>
                     </div>
-    
+
                 </div>
             </nav>
-            
+
         </aside>
     </div>
 </body>
