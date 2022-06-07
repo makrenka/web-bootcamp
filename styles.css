@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'Roboto';
+    font-weight: 700;
+    src: url('./fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+}
+
+body {
+    margin: 0;
+}
+
+.layout {
+    position: relative;
+}
+
+.sidebar {
+    position: absolute;
+    width: 220px;
+    height: 100vh;
+    left: 0px;
+    top: 0px;
+    background: #212121;
+}
+
+li {
+    list-style-type: none;
+}
+
+hr {
+    width: 200px;
+    left: 0px;
+    border: none;
+    background-color: grey; /* Цвет линии */
+    color: grey; /* Цвет линии для IE6-7 */
+    height: 1px; /* Толщина линии */
+}
+
+.subscriptions-tytle {
+    color: #AAAAAA;
+    font-weight: 700;
+}
