@@ -15,10 +15,11 @@ body {
 .sidebar {
     position: absolute;
     width: 220px;
-    height: 100vh;
+    height: fill;
     left: 0px;
     top: 0px;
     background: #212121;
+    padding-bottom: 15px;
 }
 
 li {
@@ -29,12 +30,39 @@ hr {
     width: 200px;
     left: 0px;
     border: none;
-    background-color: grey; /* Цвет линии */
-    color: grey; /* Цвет линии для IE6-7 */
-    height: 1px; /* Толщина линии */
+    background-color: grey;
+    /* Цвет линии */
+    color: grey;
+    /* Цвет линии для IE6-7 */
+    height: 1px;
+    /* Толщина линии */
 }
 
 .subscriptions-tytle {
     color: #AAAAAA;
     font-weight: 700;
 }
+
+.logo {
+    padding-top: 16px;
+    padding-left: 20px;
+}
+
+.logo-href {
+    padding-left: 18px;
+}
+
+.hambarger {
+    width: 22px;
+    height: 22px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    background-color: #212121;
+    cursor: pointer;
+}
+
+.guide-content {
+    margin-top: 28px;
+}
+
