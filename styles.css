@@ -1,11 +1,37 @@
 @font-face {
     font-family: 'Roboto';
     font-weight: 700;
+    src: url('./fonts/Roboto/Roboto-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-weight: 400;
     src: url('./fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+}
+
+:root {
+    --color-black-12: #121212;
+    --color-black-18: #181818;
+    --color-black-21: #212121;
+    --color-black-32: #323232;
+    --color-black-38: #383838;
+    --color-black-47: #474747;
+    --color-White: #FFFFFF;
+    --color-Gray-AA: #AAAAAA;
+    --color-Blue: #3DA6FF;
 }
 
 body {
     margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+    font-weight: 400;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
 }
 
 .layout {
@@ -13,29 +39,11 @@ body {
 }
 
 .sidebar {
-    position: absolute;
     width: 220px;
-    height: fill;
-    left: 0px;
-    top: 0px;
-    background: #212121;
-    padding-bottom: 15px;
-}
-
-li {
-    list-style-type: none;
-}
-
-hr {
-    width: 200px;
-    left: 0px;
-    border: none;
-    background-color: grey;
-    /* Цвет линии */
-    color: grey;
-    /* Цвет линии для IE6-7 */
-    height: 1px;
-    /* Толщина линии */
+    height: 100vh;
+    background: var(--color-black-21);  
+    padding: 16px 20px 16px 0;
+    overflow-y: auto;  
 }
 
 .subscriptions-tytle {
@@ -43,26 +51,37 @@ hr {
     font-weight: 700;
 }
 
-.logo {
-    padding-top: 16px;
-    padding-left: 20px;
-}
-
-.logo-href {
-    padding-left: 18px;
-}
-
-.hambarger {
-    width: 22px;
-    height: 22px;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    background-color: #212121;
+.hambarger {    
+    background-color: transparent;
+    border: none;
     cursor: pointer;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 0;
 }
 
-.guide-content {
-    margin-top: 28px;
+.logo-wrapper {
+    margin-bottom: 28px;
 }
 
+.menu-items {
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--color-black-38);
+}
+
+.guide-item a {
+    display: block;
+    padding: 5px 0 5px 20px;
+    font-weight: 400;
+    text-decoration: none;
+    color: var(--color-White);
+}
+
+.guide-item a:hover {
+    background-color: var(--color-black-38);
+}
+
+.icon {
+    margin-right: 20px;
+    vertical-align: middle;
+}
