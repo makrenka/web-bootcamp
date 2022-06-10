@@ -22,11 +22,26 @@
     --color-Blue: #3DA6FF;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     margin: 0;
     padding: 0;
     font-family: 'Roboto';
     font-weight: 400;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-raius: 0px;
+    background-color: #606060;      
+    border-radius: 12px;
 }
 
 ul {
@@ -49,6 +64,11 @@ ul {
 .subscriptions-tytle {
     color: #AAAAAA;
     font-weight: 700;
+    font-size: 13px;
+    text-transform: uppercase;
+    line-height: 16px;
+    padding-left: 21px;
+    padding-top: 16px;
 }
 
 .hambarger {    
@@ -69,12 +89,19 @@ ul {
     border-bottom: 1px solid var(--color-black-38);
 }
 
+.menu-items:first-child {
+    
+}
+
 .guide-item a {
     display: block;
-    padding: 5px 0 5px 20px;
+    padding: 10px 0 10px 20px;
     font-weight: 400;
     text-decoration: none;
     color: var(--color-White);
+    display: flex;
+    align-items: center;
+    position: relative;    
 }
 
 .guide-item a:hover {
@@ -83,5 +110,17 @@ ul {
 
 .icon {
     margin-right: 20px;
-    vertical-align: middle;
+    
+}
+
+.menu-items-subscriptions li a::after {
+    content: '';
+    width: 4px;
+    height: 4px;
+    background-color: var(--color-Blue);
+    border-radius: 50%;
+    position: absolute;
+    display: block;
+    top: 50%;
+    right: 0;
 }
