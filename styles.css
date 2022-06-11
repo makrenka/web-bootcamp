@@ -74,7 +74,7 @@ ul {
     padding: 5px 0 5px 20px;
     font-weight: 400;
     text-decoration: none;
-    color: var(--color-White);
+    color: var(--color-White);    
 }
 
 .guide-item a:hover {
