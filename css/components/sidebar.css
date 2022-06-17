@@ -1,5 +1,4 @@
-.sidebar {
-    width: 220px;
+.sidebar {    
     height: 100vh;
     background: var(--color-black-21);  
     padding: 16px 20px 16px 0;
