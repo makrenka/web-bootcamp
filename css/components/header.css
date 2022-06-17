@@ -1,0 +1,9 @@
+.header__logo {
+    display: none;
+}
+
+@media  and (max-width: 768px) {
+    .header__logo {
+        display: block;
+    }
+}
