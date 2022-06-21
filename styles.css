@@ -1,4 +1,7 @@
+@import url('./css/lib/normalize.css');
 @import url('./css/global.css');
 @import url('./css/components/layout.css');
 @import url('./css/components/sidebar.css');
-@import url('./css/lib/normalize.css');
+@import url('./css/components/header.css');
+@import url('./css/components/search-form.css');
+@import url('./css/components/search-voice-button.css');
