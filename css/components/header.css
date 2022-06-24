@@ -1,5 +1,6 @@
-.header {
-    display: flex;
+.header {    
+    display: grid;
+    grid-template-columns: 140px 1fr repeat(2, max-content);
 }
 
 .header__logo {
@@ -8,6 +9,18 @@
 
 .header__search-voice {
     margin-left: 8px;
+}
+
+.header__controls {
+    display: grid;
+    grid-template-columns: repeat(3, 20px);
+    grid-column-gap: 20px;
+    
+    
+}
+
+.my-profile {
+    margin-left: 24px;
 }
 
 @media screen and (max-width: 768px) {

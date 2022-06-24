@@ -1,4 +1,4 @@
-.search-voice-button {
+.icon-button {
     background: transparent;
     height: 36px;
     width: 36px;
@@ -6,8 +6,11 @@
     border: none;
     cursor: pointer;
     transition: var(--transition) background;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.search-voice-button:hover {
+.icon-button:hover {
     background: var(--color-black-47);
 }
